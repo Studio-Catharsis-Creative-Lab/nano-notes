@@ -16,6 +16,13 @@
 
 ---
 
+## See it in action
+
+<p align="center">
+  <video src="docs/screenshots/short_intro.mp4" width="320" controls muted playsinline poster="docs/screenshots/schedule.png"></video>
+</p>
+<p align="center"><a href="docs/screenshots/short_intro.mp4">Watch the short intro (MP4)</a></p>
+
 ## Powered by Liquid AI
 
 Every AI feature in nano-notes runs on **[Liquid AI](https://www.liquid.ai/)'s LFM3-Omni-2B**, a small multimodal model that understands both speech and text. One model does everything:
