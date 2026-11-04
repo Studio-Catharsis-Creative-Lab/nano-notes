@@ -5,12 +5,13 @@
 <h1 align="center">nano-notes</h1>
 
 <p align="center">
-  Private, on-device clinical notes for therapists.<br />
-  nano-notes turns therapy sessions into finished clinical notes on your iPhone: record the session, review the summary, and get a SOAP, DAP, BIRP or custom note in minutes.<br />
+  A free, experimental app that drafts therapy session notes with on-device AI.<br />
+  nano-notes is a free, experimental iPhone app that drafts session notes with on-device AI: record a session, review the summary, and get a draft SOAP, DAP, BIRP or custom note in minutes.<br />
   It runs entirely on the phone, powered by Liquid AI's on-device models, so nothing about your clients ever leaves the device.
 </p>
 
 <p align="center">
+  <strong>Free · Experimental · Not a clinical product</strong><br />
   <strong>Powered by <a href="https://www.liquid.ai/">Liquid AI</a> foundation models, running entirely on the iPhone.</strong>
 </p>
 
@@ -28,7 +29,7 @@
 Every AI feature in nano-notes runs on **[Liquid AI](https://www.liquid.ai/)'s LFM3-Omni-2B**, a small multimodal model that understands both speech and text. One model does everything:
 
 - **Live transcription** — it listens to each audio chunk directly; there is no separate speech-to-text engine.
-- **Summaries and clinical notes** — Session, SOAP, DAP, BIRP and your own templates.
+- **Summaries and draft notes** — Session, SOAP, DAP, BIRP and your own templates.
 - **Assist** — client descriptions, goals, cross-session insight and questions about a session.
 
 Why a Liquid model:
@@ -41,7 +42,7 @@ The model is downloaded once from Hugging Face ([LiquidAI/LFM3-Omni-2B-GGUF](htt
 
 ## What it does
 
-nano-notes is an iPhone app for therapists. It records a session, transcribes it live, writes a summary you can edit, and then writes the clinical note in the format you pick (Session, SOAP, DAP, BIRP or your own templates). All of it runs on the phone with a local AI model: no cloud transcription, no server, no account.
+nano-notes is a free, experimental iPhone app. It records a session, transcribes it live, writes a summary you can edit, and then drafts a note in the format you pick (Session, SOAP, DAP, BIRP or your own templates). All of it runs on the phone with a local AI model: no cloud transcription, no server, no account.
 
 <p align="center">
   <img src="docs/screenshots/schedule.png" width="220" alt="Schedule screen with today's sessions" />
@@ -104,6 +105,18 @@ nano-notes is an iPhone app for therapists. It records a session, transcribes it
 | **Prompts** | A small prompt engine assembles every prompt from its text plus global and per-prompt rules, so all AI features follow the same rules. |
 
 **Requirements:** an iPhone with enough memory for a 2B model (6 GB+ recommended; the app requests Apple's increased-memory-limit and extended-virtual-addressing entitlements). The app targets iOS; Android is not maintained.
+
+## Disclaimer
+
+nano-notes is a **free, experimental app**: a demonstration of what on-device AI can do. **It is not a clinical product.**
+
+- **Not a medical device or health record.** It is not a medical device, an electronic health record, or an official documentation system, and it does not diagnose or recommend treatment.
+- **AI output can be wrong.** Transcripts, summaries and notes can be inaccurate or incomplete. Treat everything as a draft and check it yourself.
+- **Not your official record.** Keep official notes in a system approved for that purpose.
+- **No compliance claims.** No claim of compliance with HIPAA, PHIPA, GDPR or any other privacy or health regulation.
+- **Get consent before recording.** Always get informed consent from everyone before recording; recording laws differ by place.
+- **No backup.** Data is stored only on the device; losing the phone or deleting the app loses the data.
+- **Free, as is, no warranty.** Use at your own risk.
 
 ## Privacy
 
