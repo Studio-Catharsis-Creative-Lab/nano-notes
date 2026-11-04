@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nano-notes — Privacy policy</title>
+<meta name="description" content="Privacy policy for nano-notes, a free, experimental iPhone app. Your data stays on your phone.">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+<style>
+:root { --bg0:#F7F8FF; --bg1:#ECEBFF; --text:#111428; --muted:#5F6380; --glass:rgba(255,255,255,0.62); --glass-border:rgba(255,255,255,0.9); --accent:#3B5BFF; --line:#DADDF0; }
+@media (prefers-color-scheme: dark) { :root { --bg0:#12142B; --bg1:#07080F; --text:#F2F3FA; --muted:#A4A7C0; --glass:rgba(255,255,255,0.06); --glass-border:rgba(255,255,255,0.12); --accent:#8EA2FF; --line:rgba(255,255,255,0.12); } }
+* { box-sizing: border-box; }
+body { margin:0; color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif; font-size:17px; line-height:1.65;
+  background: linear-gradient(180deg, var(--bg0), var(--bg1)); background-attachment: fixed; min-height:100vh; -webkit-font-smoothing:antialiased; }
+a { color: var(--accent); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+.brand { display:inline-flex; align-items:center; gap:10px; font-weight:600; color:var(--text); text-decoration:none; font-size:18px; }
+.brand img { width:34px; height:34px; border-radius:9px; }
+h1 { font-size: clamp(34px, 6vw, 48px); font-weight:300; letter-spacing:-0.02em; margin: 28px 0 6px; line-height:1.1; }
+h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; }
+.muted { color: var(--muted); }
+.card { background:var(--glass); border:1px solid var(--glass-border); border-radius:24px; padding: 22px 24px; margin-top: 16px;
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.summary { background: linear-gradient(135deg, #3B5BFF 0%, #6D5BF6 55%, #8B5CF6 100%); color:#fff; border:0; }
+.summary a { color:#fff; }
+ul { margin: 8px 0 0; padding-left: 20px; }
+li + li { margin-top: 6px; }
+p + p { margin-top: 10px; }
+p { margin: 0; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="">nano-notes</a>
+  <h1>Privacy policy</h1>
+  <p class="muted">Effective November 4, 2026</p>
+
+  <section class="card summary">
+    <h2>The short version</h2>
+    <p>nano-notes keeps your data on your iPhone. There are no accounts, no servers that store your data, no analytics, no advertising and no tracking. We never see your recordings, transcripts, notes or client details.</p>
+  </section>
+
+  <section class="card">
+    <h2>Who we are</h2>
+    <p>nano-notes is a free, experimental app made by Studio Catharsis Creative Lab ("we"). It is not a medical device or a clinical product; see the <a href="./#disclaimer">disclaimer</a>.</p>
+  </section>
+
+  <section class="card">
+    <h2>What stays on your phone</h2>
+    <p>Everything you create in the app is stored only on your device: audio recordings, transcripts, summaries, notes, client names and details, appointments, prompts, rules and settings. All AI processing (transcription, summaries, notes and the assistant) runs on the phone.</p>
+    <ul>
+      <li>Your notes and client data are kept in an encrypted database. Its key is stored in the iOS keychain on this device only and is never sent anywhere.</li>
+      <li>Recordings and the AI model are excluded from iCloud and computer backups. A backup of the encrypted database cannot be read on another device.</li>
+      <li>You can delete a session at any time, choose to delete audio once a note is saved, or erase everything with <em>Settings → Data → Delete all data</em>. Deleting the app also removes its data.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>When the app uses the internet</h2>
+    <p>nano-notes connects to the internet only for these two things. Neither sends your notes, recordings or client data.</p>
+    <ul>
+      <li><strong>Downloading the AI model</strong>, once, when you choose to, from Hugging Face. Hugging Face receives the standard information any download request includes, such as your IP address. Their <a href="https://huggingface.co/privacy">privacy policy</a> applies to that request.</li>
+      <li><strong>Checking for app updates</strong> through Expo's update service (EAS Update). These requests include technical details needed to deliver the right update, such as the app version, platform and a random installation identifier. Expo's <a href="https://expo.dev/privacy">privacy policy</a> applies.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Microphone:</strong> used only to record sessions you start. Audio is processed on the phone.</li>
+      <li><strong>Face ID or passcode:</strong> used to lock the app. iOS handles the check; the app only learns whether it succeeded.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Apple</h2>
+    <p>If you have chosen to share analytics with app developers in your iPhone settings, Apple may provide us with anonymous crash reports and usage statistics. Apple's privacy policy applies to that data.</p>
+  </section>
+
+  <section class="card">
+    <h2>Recording other people</h2>
+    <p>You are responsible for getting informed consent from everyone you record and for following the recording and privacy laws that apply to you.</p>
+  </section>
+
+  <section class="card">
+    <h2>Children</h2>
+    <p>nano-notes is not directed at children under 13.</p>
+  </section>
+
+  <section class="card">
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, we will update this page and the date above.</p>
+    <p>Questions? Contact Studio Catharsis Creative Lab at <a href="mailto:tim@studiocatharsis.com">tim@studiocatharsis.com</a>.</p>
+  </section>
+</main>
+</body>
+</html>

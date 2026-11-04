@@ -125,6 +125,8 @@ nano-notes is a **free, experimental app**: a demonstration of what on-device AI
 - The app locks with Face ID or the device passcode.
 - Default prompts and rules refer to the client only as "Client".
 
+Full privacy policy: https://studio-catharsis-creative-lab.github.io/nano-notes/privacy.html
+
 ## Credits and licences
 
 - AI model: Liquid AI LFM3-Omni-2B, used under the LFM Open License v1.0 (full terms at [liquid.ai](https://www.liquid.ai); free, including commercial use, for companies under $10M annual revenue).
