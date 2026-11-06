@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nano-notes — Support</title>
+<meta name="description" content="Help and contact for nano-notes, a free, experimental iPhone app.">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+<style>
+:root { --bg0:#F7F8FF; --bg1:#ECEBFF; --text:#111428; --muted:#5F6380; --glass:rgba(255,255,255,0.62); --glass-border:rgba(255,255,255,0.9); --accent:#3B5BFF; --line:#DADDF0; }
+@media (prefers-color-scheme: dark) { :root { --bg0:#12142B; --bg1:#07080F; --text:#F2F3FA; --muted:#A4A7C0; --glass:rgba(255,255,255,0.06); --glass-border:rgba(255,255,255,0.12); --accent:#8EA2FF; --line:rgba(255,255,255,0.12); } }
+* { box-sizing: border-box; }
+body { margin:0; color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif; font-size:17px; line-height:1.65;
+  background: linear-gradient(180deg, var(--bg0), var(--bg1)); background-attachment: fixed; min-height:100vh; -webkit-font-smoothing:antialiased; }
+a { color: var(--accent); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+.brand { display:inline-flex; align-items:center; gap:10px; font-weight:600; color:var(--text); text-decoration:none; font-size:18px; }
+.brand img { width:34px; height:34px; border-radius:9px; }
+h1 { font-size: clamp(34px, 6vw, 48px); font-weight:300; letter-spacing:-0.02em; margin: 28px 0 6px; line-height:1.1; }
+h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; }
+.muted { color: var(--muted); }
+.card { background:var(--glass); border:1px solid var(--glass-border); border-radius:24px; padding: 22px 24px; margin-top: 16px;
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.summary { background: linear-gradient(135deg, #3B5BFF 0%, #6D5BF6 55%, #8B5CF6 100%); color:#fff; border:0; }
+.summary a { color:#fff; }
+ul { margin: 8px 0 0; padding-left: 20px; }
+li + li { margin-top: 6px; }
+p + p { margin-top: 10px; }
+p { margin: 0; }
+details { border-top: 1px solid var(--line); padding: 14px 0; }
+details:first-of-type { border-top: 0; padding-top: 4px; }
+summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--accent); font-weight: 400; }
+details[open] summary::after { content: "–"; }
+details p, details ul { margin-top: 8px; }
+.mail { font-size: 22px; font-weight: 600; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="">nano-notes</a>
+  <h1>Support</h1>
+  <p class="muted">Help for nano-notes, a free, experimental iPhone app.</p>
+
+  <section class="card summary">
+    <h2>Contact us</h2>
+    <p>Questions, bugs or ideas? Email us and we'll get back to you.</p>
+    <p class="mail"><a href="mailto:tim@studiocatharsis.com?subject=nano-notes%20support">tim@studiocatharsis.com</a></p>
+    <p>Please don't include client names or session content in your email.</p>
+  </section>
+
+  <section class="card">
+    <h2>Common questions</h2>
+
+    <details>
+      <summary>Why does the app download a 1.6 GB model?</summary>
+      <p>All transcription and drafting runs on your iPhone using Liquid AI's LFM3-Omni model, so it has to be on the phone. It downloads once from Hugging Face; after that nano-notes works offline.</p>
+      <ul>
+        <li>Use Wi-Fi and keep about 2 GB of space free.</li>
+        <li>Keep the app open until the download finishes.</li>
+        <li>If it fails, check your connection and free space, then tap Download again on the Schedule screen or in Settings → Models.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Which iPhones does it run on?</summary>
+      <p>nano-notes needs a recent iPhone with plenty of memory to run the AI model, and an up-to-date version of iOS. Newer iPhones are faster. If the app closes while writing a summary or note, your phone may not have enough memory; closing other apps can help.</p>
+      <p>On iPad it runs as an iPhone app.</p>
+    </details>
+
+    <details>
+      <summary>I restored or replaced my phone and my notes are gone</summary>
+      <p>Your notes and client details are stored in an encrypted database whose key never leaves the phone it was created on. That protects your data, but it also means notes can't be restored from an iCloud or computer backup onto another phone. Recordings and the AI model aren't backed up either.</p>
+      <p>nano-notes is not a backup or record-keeping service. Keep official records in your approved documentation system.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete my data?</summary>
+      <ul>
+        <li><strong>One session:</strong> open it and choose Delete from the ⋯ menu.</li>
+        <li><strong>Recordings:</strong> in Settings → Data, turn on deleting a session's audio once its note is saved.</li>
+        <li><strong>Everything:</strong> Settings → Data → Delete all data. This erases every client, session, recording, note, prompt and setting.</li>
+        <li><strong>The AI model:</strong> Settings → Models → Delete from device.</li>
+      </ul>
+      <p>Deleting the app also removes all of its data.</p>
+    </details>
+
+    <details>
+      <summary>Face ID or the lock screen isn't working</summary>
+      <p>nano-notes uses your iPhone's Face ID or passcode. Check that Face ID is allowed for nano-notes in iPhone Settings → nano-notes. You can change how quickly it locks in Settings → Security.</p>
+    </details>
+
+    <details>
+      <summary>The AI draft is wrong or missing something</summary>
+      <p>AI drafts can contain errors and omissions. Edit the text directly, or tap Redo and type a short adjustment (for example "include homework"). You can change the templates and rules in Settings → Prompt engine.</p>
+    </details>
+
+    <details>
+      <summary>How do I get updates?</summary>
+      <p>Small updates arrive automatically. To check now, go to Settings → Check for update. Larger updates come through the App Store.</p>
+    </details>
+
+    <details>
+      <summary>How can I give feedback?</summary>
+      <p>Email <a href="mailto:tim@studiocatharsis.com?subject=nano-notes%20feedback">tim@studiocatharsis.com</a>. If you're testing through TestFlight, you can also take a screenshot in the app and send it as feedback from TestFlight.</p>
+    </details>
+  </section>
+
+  <section class="card">
+    <h2>Before you rely on it</h2>
+    <p>nano-notes is free, experimental software. It is not a medical device, an electronic health record or a clinical documentation system, and it doesn't replace professional judgment. Get consent from everyone you record.</p>
+    <p><a href="./#disclaimer">Read the full disclaimer</a> · <a href="privacy.html">Privacy policy</a></p>
+  </section>
+</main>
+</body>
+</html>

@@ -127,6 +127,8 @@ nano-notes is a **free, experimental app**: a demonstration of what on-device AI
 
 Full privacy policy: https://studio-catharsis-creative-lab.github.io/nano-notes/privacy.html
 
+Help and contact: https://studio-catharsis-creative-lab.github.io/nano-notes/support.html
+
 ## Credits and licences
 
 - AI model: Liquid AI LFM3-Omni-2B, used under the LFM Open License v1.0 (full terms at [liquid.ai](https://www.liquid.ai); free, including commercial use, for companies under $10M annual revenue).
