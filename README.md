@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="assets/icon.png" width="120" alt="nano-notes app icon" />
+  <img src="assets/icon.png" width="120" alt="StoaPneuma Notes app icon" />
 </p>
 
-<h1 align="center">nano-notes</h1>
+<h1 align="center">StoaPneuma Notes</h1>
 
 <p align="center">
-  A free, experimental app that drafts therapy session notes with on-device AI.<br />
-  nano-notes is a free, experimental iPhone app that drafts session notes with on-device AI: record a session, review the summary, and get a draft SOAP, DAP, BIRP or custom note in minutes.<br />
+  An experimental app that drafts therapy session notes with on-device AI.<br />
+  StoaPneuma Notes is an experimental iPhone app that drafts session notes with on-device AI: record a session, review the summary, and get a draft SOAP, DAP, BIRP or custom note in minutes.<br />
   It runs entirely on the phone, powered by Liquid AI's on-device models, so nothing about your clients ever leaves the device.
 </p>
 
 <p align="center">
-  <strong>Free · Experimental · Not a clinical product</strong><br />
+  <strong>Experimental · Not a clinical product</strong><br />
   <strong>Powered by <a href="https://www.liquid.ai/">Liquid AI</a> foundation models, running entirely on the iPhone.</strong>
 </p>
 
@@ -26,7 +26,7 @@
 
 ## Powered by Liquid AI
 
-Every AI feature in nano-notes runs on **[Liquid AI](https://www.liquid.ai/)'s LFM3-Omni-2B**, a small multimodal model that understands both speech and text. One model does everything:
+Every AI feature in StoaPneuma Notes runs on **[Liquid AI](https://www.liquid.ai/)'s LFM3-Omni-2B**, a small multimodal model that understands both speech and text. One model does everything:
 
 - **Live transcription** — it listens to each audio chunk directly; there is no separate speech-to-text engine.
 - **Summaries and draft notes** — Session, SOAP, DAP, BIRP and your own templates.
@@ -35,14 +35,14 @@ Every AI feature in nano-notes runs on **[Liquid AI](https://www.liquid.ai/)'s L
 Why a Liquid model:
 
 - **Small enough for a phone.** At about 1.1 GB (4-bit) plus a 0.5 GB audio projector, it runs locally on an iPhone through llama.cpp — so session audio and notes never leave the device.
-- **Light on memory for long sessions.** Liquid's hybrid architecture uses mostly short convolution blocks with only a few attention layers, so the memory needed for long contexts stays small. The model handles up to 128k tokens; nano-notes sizes the context to each job.
+- **Light on memory for long sessions.** Liquid's hybrid architecture uses mostly short convolution blocks with only a few attention layers, so the memory needed for long contexts stays small. The model handles up to 128k tokens; StoaPneuma Notes sizes the context to each job.
 - **One model instead of three.** Early versions used LFM2-2.6B-Transcript for summaries and LFM3-1.7B for notes alongside the Omni model for transcription. Moving everything to LFM3-Omni-2B cut the download from 4.3 GB to 1.6 GB and removed model swapping.
 
 The model is downloaded once from Hugging Face ([LiquidAI/LFM3-Omni-2B-GGUF](https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF)) and used under the LFM Open License v1.0.
 
 ## What it does
 
-nano-notes is a free, experimental iPhone app. It records a session, transcribes it live, writes a summary you can edit, and then drafts a note in the format you pick (Session, SOAP, DAP, BIRP or your own templates). All of it runs on the phone with a local AI model: no cloud transcription, no server, no account.
+StoaPneuma Notes is an experimental iPhone app. It records a session, transcribes it live, writes a summary you can edit, and then drafts a note in the format you pick (Session, SOAP, DAP, BIRP or your own templates). All of it runs on the phone with a local AI model: no cloud transcription, no server, no account.
 
 <p align="center">
   <img src="docs/screenshots/schedule.png" width="220" alt="Schedule screen with today's sessions" />
@@ -108,7 +108,7 @@ nano-notes is a free, experimental iPhone app. It records a session, transcribes
 
 ## Disclaimer
 
-nano-notes is a **free, experimental app**: a demonstration of what on-device AI can do. **It is not a clinical product.**
+StoaPneuma Notes is an **experimental app**: a demonstration of what on-device AI can do. **It is not a clinical product.**
 
 - **Not a medical device or health record.** It is not a medical device, an electronic health record, or an official documentation system, and it does not diagnose or recommend treatment.
 - **AI output can be wrong.** Transcripts, summaries and notes can be inaccurate or incomplete. Treat everything as a draft and check it yourself.
@@ -116,7 +116,7 @@ nano-notes is a **free, experimental app**: a demonstration of what on-device AI
 - **No compliance claims.** No claim of compliance with HIPAA, PHIPA, GDPR or any other privacy or health regulation.
 - **Get consent before recording.** Always get informed consent from everyone before recording; recording laws differ by place.
 - **No backup.** Data is stored only on the device; losing the phone or deleting the app loses the data.
-- **Free, as is, no warranty.** Use at your own risk.
+- **As is, no warranty.** Use at your own risk.
 
 ## Privacy
 
@@ -125,13 +125,13 @@ nano-notes is a **free, experimental app**: a demonstration of what on-device AI
 - The app locks with Face ID or the device passcode.
 - Default prompts and rules refer to the client only as "Client".
 
-Full privacy policy: https://studio-catharsis-creative-lab.github.io/nano-notes/privacy.html
+Full privacy policy: https://studio-catharsis-creative-lab.github.io/stoapneuma-notes/privacy.html
 
-Help and contact: https://studio-catharsis-creative-lab.github.io/nano-notes/support.html
+Help and contact: https://studio-catharsis-creative-lab.github.io/stoapneuma-notes/support.html
 
 ## Credits and licences
 
-- AI model: Liquid AI LFM3-Omni-2B, used under the LFM Open License v1.0 (full terms at [liquid.ai](https://www.liquid.ai); free, including commercial use, for companies under $10M annual revenue).
+- AI model: Liquid AI LFM3-Omni-2B, used under the LFM Open License v1.0 (full terms at [liquid.ai](https://www.liquid.ai)).
 - Built with [Expo](https://expo.dev), [expo-router](https://docs.expo.dev/router/introduction/), [llama.rn](https://github.com/mybigday/llama.rn) and [react-native-audio-api](https://github.com/software-mansion/react-native-audio-api).
 
 ---
