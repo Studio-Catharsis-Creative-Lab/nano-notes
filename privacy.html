@@ -29,6 +29,7 @@ h2 { font-size: 24px; margin: 0 0 8px; }
   -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
 .summary { background: linear-gradient(160deg,#2A2920,#14140F 60%,#0E0E0B); color:#ECE6D6; border:0; }
 .summary a { color:#C9AE74; }
+@media (prefers-color-scheme: dark) { .summary { border:1px solid var(--line); } }
 ul { margin: 8px 0 0; padding-left: 20px; }
 li + li { margin-top: 6px; }
 p + p { margin-top: 10px; }
@@ -76,7 +77,7 @@ p { margin: 0; }
     <p>The AI is Liquid AI's LFM3-Omni-2B model, run on your iPhone through llama.cpp. It uses your session audio, transcripts, summaries, notes, prompts and client details only on the device, to transcribe sessions and draft summaries and notes. None of this is sent to Liquid AI, Hugging Face, us, or any other company or server.</p>
     <p>The model file is downloaded once from Hugging Face. That request contains no user data. Hugging Face, like any web host, sees the device's IP address when serving the file.</p>
     <p>The app asks your permission on an "AI and your data" screen before any AI feature can be used or the model downloaded. You can change this in Settings → AI and your data.</p>
-    <p>Because no personal data is shared with any third party, no third party processes it.</p>
+    <p>No third party receives or processes your recordings, transcripts, notes or client details.</p>
   </section>
 
   <section class="card">
